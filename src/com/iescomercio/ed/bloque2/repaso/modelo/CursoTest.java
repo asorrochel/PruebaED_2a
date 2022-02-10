@@ -8,7 +8,22 @@ class CursoTest {
 
 	@Test
 	void testEliminarAlumno() {
-		fail("Not yet implemented");
+		Curso c = new Curso();
+		c.aniadirAlumno(new Persona("123456789","Pedro","Casas"));
+		c.aniadirAlumno(new Persona("458744787","Juan","Pedro"));
+		
+		int numeroAlumnosAntes = c.numeroAlumnos(); //2
+		try {
+			c.eliminarAlumno("123456789");
+		} catch (Exception e1) {
+		}
+		int numeroAlumnosDespues = c.numeroAlumnos(); //1
+		
+		assertEquals(numeroAlumnosAntes - 1, numeroAlumnosDespues);
+		
+		assertThrows(Exception.class, 
+				()->c.eliminarAlumno("5"));
+		
 	}
 
 	@Test
