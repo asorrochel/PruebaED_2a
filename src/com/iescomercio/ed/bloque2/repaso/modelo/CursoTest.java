@@ -2,6 +2,7 @@ package com.iescomercio.ed.bloque2.repaso.modelo;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.util.*;
 import org.junit.jupiter.api.Test;
 
 class CursoTest {
@@ -41,7 +42,12 @@ class CursoTest {
 
 	@Test
 	void testEstaRegistrado() {
-		fail("Not yet implemented");
+		Persona p = new Persona();
+		String dni = "123456789";
+		ArrayList listaAlumnos= new ArrayList<Persona>();
+		listaAlumnos.add(new Persona("123456789","Pedro","Casas")); //persona 1
+		
+		assertEquals(dni,((Persona) listaAlumnos.get(0)).getDni());
 	}
 
 	@Test
