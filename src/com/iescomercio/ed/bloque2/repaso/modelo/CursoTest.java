@@ -52,7 +52,13 @@ class CursoTest {
 
 	@Test
 	void testCurso() {
-		fail("Not yet implemented");
+		ArrayList<Persona>listaAlumnos= new ArrayList<Persona>();
+		Curso c = new Curso();
+		Persona p = new Persona("123456789","Pedro","Casas");
+		c.aniadirAlumno(p);
+		listaAlumnos.add(p);
+		
+		assertEquals(listaAlumnos.size(),c.numeroAlumnos());
 	}
 
 	@Test
