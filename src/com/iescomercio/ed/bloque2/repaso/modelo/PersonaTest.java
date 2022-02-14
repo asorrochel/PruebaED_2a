@@ -24,7 +24,21 @@ class PersonaTest {
 
 	@Test
 	void testSetDni() {
-		fail("Not yet implemented");
+		Persona p1 = new Persona ();
+		
+		try {
+			p1.setDni("12345678A");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		String dni = p1.getDni();
+		String dniEsperado = "12345678A";
+		
+		assertEquals(dniEsperado,dni);
+		
+		Exception e = assertThrows(Exception.class, ()->p1.setDni("004741"));
+		assertEquals(e.getMessage(), "El ultimo caracter introducido no es una letra");
 	}
 
 	@Test
