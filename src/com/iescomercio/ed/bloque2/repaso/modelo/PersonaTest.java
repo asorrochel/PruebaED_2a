@@ -43,7 +43,11 @@ class PersonaTest {
 
 	@Test
 	void testGetNombre() {
-		fail("Not yet implemented");
+		Persona p1 = new Persona ("12345678A", "Adrian", "Sorroche");
+		String nombre = p1.getNombre();
+		String nombreEsperado = "Adrian";
+		
+		assertEquals(nombreEsperado,nombre);
 	}
 
 	@Test
