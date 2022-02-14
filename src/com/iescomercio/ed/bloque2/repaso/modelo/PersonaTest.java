@@ -52,7 +52,11 @@ class PersonaTest {
 
 	@Test
 	void testSetNombre() {
-		fail("Not yet implemented");
+		Persona p1 = new Persona ();
+		p1.setNombre("Adrian");
+		String nombreEsperado = "Adrian";
+		String nombre = p1.getNombre();
+		assertEquals(nombreEsperado,nombre);
 	}
 
 	@Test
