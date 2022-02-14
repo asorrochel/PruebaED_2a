@@ -14,7 +14,12 @@ class PersonaTest {
 
 	@Test
 	void testGetDni() {
-		fail("Not yet implemented");
+		Persona p1 = new Persona ("12345678A", "Adrian", "Sorroche");
+		String dni = p1.getDni();
+		String dniEsperado = "12345678A";
+		
+		assertEquals(dniEsperado,dni);
+		
 	}
 
 	@Test
