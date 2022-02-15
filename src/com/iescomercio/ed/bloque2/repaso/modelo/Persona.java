@@ -55,9 +55,11 @@ public class Persona{
 		return nombre;
 	}
 	
-	/*
-	 * Documentar y crear test unitario
-	 * */
+	/**
+	 * Establecer el Nombre a una persona
+	 * 
+	 * @param nombre Nombre de la persona
+	 */
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
