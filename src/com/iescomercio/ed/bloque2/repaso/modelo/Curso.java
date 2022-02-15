@@ -7,9 +7,12 @@ public class Curso {
 	
 	private List<Persona> listaAlumnos;
 
-	/*
-	 * Documentar y crear test unitario
-	 * */
+	/**
+	 * Función que elimina a un alumno del curso
+	 * 
+	 * @param dni Identificador único de la persona que se quiere eliminar
+	 * @throws Exception El dni no tiene la longitud adecuada de 9 caracteres
+	 */
 	public void eliminarAlumno(String dni) throws Exception {
 		if(dni.length()==9) {//comprobar la longitud del dni
 			listaAlumnos.remove(new Persona(dni, "", "")); //solo hace falta el dni
