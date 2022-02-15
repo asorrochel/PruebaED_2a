@@ -8,9 +8,13 @@ public class Persona{
 	
 	public Persona() {}
 	
-	/*
-	 * Documentar y crear test unitario
-	 * */
+	/**
+	 * Constructor que inicializa el objeto "persona" asignando los siguientes valores [dni,nombre,apellido1]
+	 * 
+	 * @param dni Identificador único de la persona
+	 * @param nombre Nombre de la persona
+	 * @param apellido1 Primer apellido de la persona
+	 */
 	public Persona(String dni, String nombre, String apellido1) {
 		this.dni = dni;
 		this.nombre = nombre;
