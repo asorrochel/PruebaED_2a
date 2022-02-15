@@ -30,9 +30,12 @@ public class Curso {
 		listaAlumnos.add(p);
 	}
 	
-	/*
-	 * Documentar y crear test unitario
-	 * */
+	/**
+	 * Función que comprueba si el DNI de una persona está registrado en el curso
+	 * 
+	 * @param dni Identificador único de la persona que se quiere buscar
+	 * @return Verdadero si esta registrado dicho dni, falso en caso contrario
+	 */
 	public Boolean estaRegistrado(String dni) {
 		int i =0;
 		Boolean encontrado=false;
