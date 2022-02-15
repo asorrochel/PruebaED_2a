@@ -55,9 +55,11 @@ public class Curso {
 		listaAlumnos= new ArrayList<Persona>();
 	}
 	
-	/*
-	 * Documentar y crear test unitario
-	 * */
+	/**
+	 * Función que devuelve el número de alumnos que hay en el curso
+	 * 
+	 * @return Devuelve el número de alumnos registrados en el curso
+	 */
 	public Integer numeroAlumnos() {return listaAlumnos.size();}
 	
 	
